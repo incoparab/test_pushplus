@@ -1,0 +1,2 @@
+# test_pushplus
+测试在GitHubAction中使用pushplus推送，测试get和post方式都成功
