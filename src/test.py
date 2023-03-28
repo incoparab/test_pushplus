@@ -16,9 +16,10 @@ import json
 def test():
     key = sys.argv[1]
     content = str(time.time())
+    title = 'test'
     # get方式
     requests.get(
-        f'http://www.pushplus.plus/send?token={key}&content={content}')
+        f'http://www.pushplus.plus/send?token={key}&title={title}&content={content}')
     time.sleep(2)
     # post方式
     data = {"token": key, "title": "post", "content": content}
